@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        
+        {
+            "name": "Build",
+            "type": "jps-build",
+            "workingDir": "C:\\Users\\dte\\IdeaProjects\\markus",
+            "module": "markus",
+            "includeTests": false
+        },
+        {
+            "name": "Main FLEET",
+            "type": "jps-run",
+            "args": ["test.md", "-o", "markus.pdf"],
+            "workingDir": "C:\\Users\\dte\\IdeaProjects\\markus\\playground/",
+            "dependsOn": ["Build"],
+            "mainClass": "org.descartes.Main",
+            "module": "markus",
+            "options": ["-Dfile.encoding=UTF-8", "@C:\\Users\\dte\\AppData\\Local\\Temp\\idea_arg_file7288964"]
+        }
+    ]
+}
